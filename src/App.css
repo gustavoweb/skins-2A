@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #425bfd 0%, #687be5 50%, #b98bff 100%);
+  font-family: "Outfit", sans-serif;
 }
 .auth-background{
   position: absolute;
@@ -67,11 +69,11 @@
   z-index: 3;
   width: 100%;
   max-width: 440px;
-  background: #000000e0;
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   border-radius: 24px;
   padding: 3rem 2.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   animation: slideUp 0.6s ease-out;
 }
@@ -84,4 +86,88 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+.auth-header{
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.auth-header h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+.auth-header p{
+  font-size: 0.95rem;
+  color: rgba(255,255,255, 0.6);
+  font-weight: 300;
+}
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: fadeIn 0.4s ease-out backwards;
+}
+.form-group:nth-child(1) { animation-delay: 0.1s;}
+.form-group:nth-child(2) { animation-delay: 0.2s;}
+.form-group:nth-child(3) { animation-delay: 0.3s;}
+.form-group:nth-child(4) { animation-delay: 0.4s;}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+label{
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+input{
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  outline: none;
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.3);
+}
+input:focus{
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 107, 157, 0.6);
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.1);
+  transform: translateY(-2px);
+}
+input:hover{
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.forgot-password{
+  text-align: right;
+  margin-top: -0.5rem;
+}
+.forgot-password a{
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transform: color 0.3s ease;
+}
+.forgot-password a:hover{
+  color: #ff6b9d;
 }

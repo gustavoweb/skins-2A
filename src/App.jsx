@@ -17,6 +17,7 @@ function App() {
             <p>Entre para continuar</p>
           </div>
 
+          <form className='auth-form'>
           <div className="form-group">
             <label htmlFor="usuario">Usuário</label>
             <input 
@@ -64,6 +65,7 @@ function App() {
           <button type='submit' className='submit-btn'>
             Entrar
           </button>
+          </form>
 
           <div className="auth-footer">
             <p>Não tem uma conta?</p>

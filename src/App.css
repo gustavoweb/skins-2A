@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .auth-container{
   min-height: 100vh;
@@ -8,8 +12,7 @@
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #2a1f3a 100%);
-  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #425bfd 0%, #687be5 50%, #b98bff 100%);
 }
 .auth-background{
   position: absolute;
@@ -36,26 +39,49 @@
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, #4158d0 0%, transparent 70%);
-  top: 50%;
-  left: 50%;
-  animation-delay: 14s;
+  bottom: -5%;
+  right: -5%;
+  animation-delay: 5s;
 }
 .orb-3{
   width: 350px;
   height: 350px;
   background: radial-gradient(circle, #c850c0 0%, transparent 70%);
-  top: -5%;
-  left: -5%;
-  animation-delay: 7s;
+  top: 50%;
+  left: 50%;
+  animation-delay: 10s;
 }
 @keyframes float{
-  0%, 100% {
+  0%, 100%{
     transform: translate(0, 0) scale(1);
   }
-  33% {
-    transform: translate(50px, -50px) scale(1.1);
+  33%{
+    transform: translate(50px, -50px) scale(1.2);
   }
-  66% {
-    transform: translate(-30px, 30px) scale(0.9);
+  66%{
+    transform: translate(-30px, 30px) scale(0.7);
+  }
+}
+.auth-card{
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 440px;
+  background: #000000e0;
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.6s ease-out;
+}
+@keyframes slideUp{
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

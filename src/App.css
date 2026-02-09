@@ -1,8 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .auth-container{
   min-height: 100vh;
@@ -13,6 +9,7 @@
   position: relative;
   overflow: hidden;
   background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #2a1f3a 100%);
+  font-family: 'Outfit', sans-serif;
 }
 .auth-background{
   position: absolute;
@@ -39,26 +36,26 @@
   width: 400px;
   height: 400px;
   background: radial-gradient(circle, #4158d0 0%, transparent 70%);
-  bottom: -5%;
-  right: -5%;
-  animation-delay: 5s;
+  top: 50%;
+  left: 50%;
+  animation-delay: 14s;
 }
 .orb-3{
   width: 350px;
   height: 350px;
   background: radial-gradient(circle, #c850c0 0%, transparent 70%);
-  top: 50%;
-  left: 50%;
-  animation-delay: 10s;
+  top: -5%;
+  left: -5%;
+  animation-delay: 7s;
 }
 @keyframes float{
-  0%, 100%{
+  0%, 100% {
     transform: translate(0, 0) scale(1);
   }
-  33%{
-    transform: translate(50px, -50px) scale(1.2);
+  33% {
+    transform: translate(50px, -50px) scale(1.1);
   }
-  66%{
-    transform: translate(-30px, 30px) scale(0.7);
+  66% {
+    transform: translate(-30px, 30px) scale(0.9);
   }
 }

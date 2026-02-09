@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
+export default function App() {
   return (
     <>
       <div className="auth-container">
@@ -15,4 +15,3 @@ function App() {
   )
 }
 
-export default App

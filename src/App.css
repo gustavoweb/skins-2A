@@ -13,7 +13,7 @@
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #425bfd 0%, #687be5 50%, #b98bff 100%);
+  background: linear-gradient(135deg, #18257b 0%, #34428f 50%, #503679 100%);
   font-family: "Outfit", sans-serif;
 }
 .auth-background{
@@ -32,7 +32,7 @@
 .orb-1{
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #ff6b9d 0%, transparent 70%);
+  background: radial-gradient(circle, #fa95b7 0%, transparent 70%);
   top: -10%;
   left: -10%;
   animation-delay: 0s;
@@ -40,7 +40,7 @@
 .orb-2{
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, #4158d0 0%, transparent 70%);
+  background: radial-gradient(circle, #6a7bd3 0%, transparent 70%);
   bottom: -5%;
   right: -5%;
   animation-delay: 5s;
@@ -48,7 +48,7 @@
 .orb-3{
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, #c850c0 0%, transparent 70%);
+  background: radial-gradient(circle, #cc7cc7 0%, transparent 70%);
   top: 50%;
   left: 50%;
   animation-delay: 10s;
@@ -170,4 +170,83 @@ input:hover{
 }
 .forgot-password a:hover{
   color: #ff6b9d;
+}
+.submit-btn{
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #ff6b9d 0%, #c850c0 100%);
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+}
+.submit-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
+}
+.submit-btn:active{
+  transform: translateY(0);
+}
+.auth-footer{
+  margin-top: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.auth-footer p{
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.toggle-btn{
+  background: none;
+  border: none;
+  color: #ff6b9d;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+  font-family: 'Outfit', sans-serif;
+}
+.toggle-btn:hover{
+  color: #ff8fb3;
+}
+
+@media (max-width: 640px){
+  .auth-container{
+    padding: 1rem;
+  }
+  .auth-card{
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+  .auth-header h1{
+    font-size: 2rem;
+  }
+  .gradient-orb{
+    filter: blur(60px);
+  }
+  .orb-1{
+    width: 300px;
+    height: 300px;
+  }
+  .orb-2{
+    width: 250px;
+    height: 250px;
+  }
+  .orb-3{
+    width: 200px;
+    height: 200px;
+  }
 }
